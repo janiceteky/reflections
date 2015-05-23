@@ -1,0 +1,18 @@
+git diff
+
+git clone
+
+git checkout
+
+git log
+
+NOT A GIT COMMAND BUT GOOD TO KNOW
+scp -- secure copy used to copy a directory from one computer to another
+
+ls -a -- show hidden files
+git init -- initiates a new git repository
+
+git status -- shows which files have chnged since the last command
+
+git add -- to add commits to the staging area before being added to the online repository
+
