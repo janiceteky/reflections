@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A .git hidden file is added to the directory and git can start tracking changes.
+
