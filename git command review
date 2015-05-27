@@ -16,3 +16,56 @@ git status -- shows which files have chnged since the last command
 
 git add -- to add commits to the staging area before being added to the online repository
 
+AFTER ADDING RUN THESE THREE COMMANDS UNTIL ALL CHANGES ARE DONE
+
+git commit -- to commit to the repository
+
+git log -- check to see if commit worked
+
+git status -- check if all files have been committed
+
+git diff -- this command with no arguments compares files in the working directory and the staging area
+
+git diff --staged -- to compare the staging area to the repository, only use just before committing
+
+after running both of these I can run git diff --hard -- be very careful when running this because any changes cannot be undone
+
+git checkout master -- 
+
+The DETACHED HEAD MESSAGE  -- GIT is warning that I have a commit that is not labled with a branch name
+
+git branch with no arguments shows current branchs, the star means that it the current branch that is checked out
+git branch easy-mode -- it creates a new branch with the name easy-mode
+git checkout easy-mode -- to change the checked out branch to easy-mode, so if I run git branch again easy-mode should have a star
+
+git log --graph --oneline   --> helps visualize changes, oneline makes the output shorter and easier to see and if you have to tell git which branches I want to see do the following:
+git log --graph --oneline master coins
+
+git checkout -b new_branch_name --> use when checking out branches so that the new branch will not be an orphan
+
+
+git merge master coins --> creates a merges version of the two branches master and coins
+
+git show --> shows what commits were introduced by a commit compared to it's parent
+
+git branch -d coins  --> deletes the coins branch but not the commits -- only use after merging a commit
+
+TO PUSH CHANGES TO GITHUB.COM
+
+FROM GITBASH GOTO THE GIT REPOSITORY ON MY COMPUTER AND DO THE FOLLOWING:
+
+git remote add <name of branch ex.--> origin> <link to github.com from github repository>
+THEN USE EITHER OF THE FOLLOWING THE -V OPTION IS FOR VERBOSE
+
+git remote -v
+
+git push -u origin master
+IT WILL ASK FOR USERNAME AND PASSWORD
+THEN ADD DATA TO GITHUB.COM
+
+VIEW COMMIT HISTORY BY CLICKING ON COMMIT ON THE GITHUB WEBSITE, SIMILAR TO GIT LOG ON THE COMMAND LINE
+
+
+
+
+
